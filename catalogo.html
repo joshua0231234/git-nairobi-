@@ -1,0 +1,895 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<title>Catálogo Completo | Nairobi Artesanal SRL</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- TU CSS EXTERNO -->
+<link rel="stylesheet" href="clase1.css">
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+    <div class="logo">
+        <div class="logo-icon"><i class="fas fa-leaf"></i></div>
+        <div class="logo-text">
+            <span class="logo-name">Nairobi Artesanal SRL</span>
+            <span class="logo-tag">Hecho con amor 🌸</span>
+        </div>
+    </div>
+
+    <div class="nav-actions">
+        <a href="https://www.facebook.com/profile.php?id=61570576890740" target="_blank" class="social-icon fb-icon">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/nairobiartesanal" target="_blank" class="social-icon ig-icon">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="clase.html" class="back-btn">
+            <i class="fas fa-arrow-left"></i>
+            <span>Volver al inicio</span>
+        </a>
+
+        <div class="cart-icon" id="cartIcon">
+            <i class="fas fa-cart-shopping"></i>
+            <span class="cart-count" id="cartCount">0</span>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO -->
+<section class="catalog-hero">
+    <div class="catalog-hero-badge">
+        <i class="fas fa-book-open"></i>
+       Catálogo completo 
+    </div>
+
+    <h1>Todos nuestros productos naturales 🌿</h1>
+
+    <p>
+        Cosmética artesanal dominicana: cuidado capilar, facial,
+        exfoliantes, tratamientos corporales, spa y más.
+    </p>
+</section>
+
+<!-- FILTROS -->
+<div class="filters-wrap">
+    <button class="filter-btn active" data-filter="all">✨ Todos</button>
+    <button class="filter-btn" data-filter="facial">😊 Facial</button>
+    <button class="filter-btn" data-filter="exfoliante">🌿 Exfoliantes</button>
+    <button class="filter-btn" data-filter="jabon">🧼 Jabones</button>
+    <button class="filter-btn" data-filter="spa">💆‍♀️ Spa & Cuerpo</button>
+    <button class="filter-btn" data-filter="cabello">💇 Cabello</button>
+    <button class="filter-btn" data-filter="tratamiento">💊 Tratamientos</button>
+    <button class="filter-btn" data-filter="linea">📦 Líneas</button>
+    <button class="filter-btn" data-filter="kit">🎁 Kits</button>
+    <button class="filter-btn" data-filter="rolon">💧 Rol-On</button>
+</div>
+
+<!-- CONTENEDOR -->
+<div class="catalog-container">
+
+    <!-- ============================================ -->
+    <!-- SECCIÓN 1: COSMÉTICOS FACIALES -->
+    <!-- ============================================ -->
+    <div class="category-section">
+        <div class="category-header">
+            <div class="category-icon-wrap"><i class="fas fa-face-smile"></i></div>
+            <h2 class="category-title">🌸 Cosméticos Faciales</h2>
+        </div>
+
+        <div class="catalog-grid">
+            <!-- Protector Solar -->
+            <div class="product-card" data-category="facial" data-id="1" data-name="Protector Solar" data-price="600" data-img="protector.png" data-desc="Protege contra daños UV, previene manchas y envejecimiento prematuro." data-tag="Protección">
+                <span class="product-badge badge-premium">☀️ Protección</span>
+                <div class="product-image-wrap"><img src="protector.png" alt="Protector Solar"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-sun"></i> Facial</div>
+                    <h3 class="product-name">Protector Solar</h3>
+                    <p class="product-desc">Protege la piel y previene el envejecimiento prematuro.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$600</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crema Blanqueadora -->
+            <div class="product-card" data-category="facial" data-id="2" data-name="Crema Blanqueadora" data-price="900" data-img="crema.png" data-desc="Mejora el tono, reduce manchas oscuras y unifica la pigmentación." data-tag="Luminosidad">
+                <span class="product-badge badge-nuevo">✨ Aclarante</span>
+                <div class="product-image-wrap"><img src="crema.png" alt="Crema Blanqueadora"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-star"></i> Luminosidad</div>
+                    <h3 class="product-name">Crema Blanqueadora</h3>
+                    <p class="product-desc">Aclara manchas y mejora el aspecto de la piel.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$900</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Crema Hidratante Acné -->
+            <div class="product-card" data-category="facial" data-id="3" data-name="Crema Hidratante Acné" data-price="800" data-img="hidratante.png" data-desc="Hidratación profunda, calma la irritación y no obstruye los poros." data-tag="Anti-acné">
+                <span class="product-badge badge-especial">🌿 Equilibrio</span>
+                <div class="product-image-wrap"><img src="hidratante.png" alt="Crema Hidratante Acné"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-droplet"></i> Hidratación</div>
+                    <h3 class="product-name">Crema Hidratante Acné</h3>
+                    <p class="product-desc">Calma la irritación y mantiene la piel equilibrada.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$800</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SECCIÓN 2: EXFOLIANTES CORPORALES -->
+    <!-- ============================================ -->
+    <div class="category-section">
+        <div class="category-header">
+            <div class="category-icon-wrap"><i class="fas fa-hand-sparkles"></i></div>
+            <h2 class="category-title">🌿 Exfoliantes Corporales</h2>
+        </div>
+
+        <div class="catalog-grid">
+            <div class="product-card" data-category="exfoliante" data-id="4" data-name="Exfoliante de Cúrcuma" data-price="600" data-img="curcuma.png" data-desc="Ilumina la piel, reduce manchas oscuras, combate el acné y elimina células muertas." data-tag="Iluminador">
+                <span class="product-badge badge-popular">🌿 6oz</span>
+                <div class="product-image-wrap"><img src="curcuma.png" alt="Exfoliante de Cúrcuma"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-seedling"></i> Iluminador</div>
+                    <h3 class="product-name">Exfoliante de Cúrcuma</h3>
+                    <p class="product-desc">Ayuda a eliminar manchas y suaviza la piel.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$800</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="exfoliante" data-id="5" data-name="Exfoliante de Arroz" data-price="700" data-img="blanco.png" data-desc="Elimina células muertas, suaviza la piel y proporciona brillo natural." data-tag="Suavidad">
+                <span class="product-badge badge-nuevo">🍚 8oz</span>
+                <div class="product-image-wrap"><img src="blanco.png" alt="Exfoliante de Arroz"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-grain"></i> Suavidad</div>
+                    <h3 class="product-name">Exfoliante de Arroz</h3>
+                    <p class="product-desc">Mejora la textura y controla la grasa.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$800</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="exfoliante" data-id="6" data-name="Exfoliante de Carbón Activado" data-price="700" data-img="carbon.png" data-desc="Purifica la piel, elimina impurezas y controla el exceso de grasa." data-tag="Purificante">
+                <span class="product-badge badge-premium">🖤 8oz</span>
+                <div class="product-image-wrap"><img src="carbon.png" alt="Exfoliante de Carbón Activado"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-fire"></i> Purificante</div>
+                    <h3 class="product-name">Exfoliante de Carbón Activado</h3>
+                    <p class="product-desc">Limpieza profunda y desintoxicación de la piel.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$800</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="exfoliante" data-id="7" data-name="Exfoliante de Coco" data-price="700" data-img="coco.png" data-desc="Hidrata, suaviza y nutre la piel mientras elimina células muertas." data-tag="Nutritivo">
+                <span class="product-badge badge-especial">🥥 Nutritivo</span>
+                <div class="product-image-wrap"><img src="coco.png" alt="Exfoliante de Coco"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-droplet"></i> Nutrición</div>
+                    <h3 class="product-name">Exfoliante de Coco</h3>
+                    <p class="product-desc">Aroma delicado y propiedades antioxidantes.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$800</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SECCIÓN 3: JABONES ARTESANALES -->
+    <!-- ============================================ -->
+    <div class="category-section">
+        <div class="category-header">
+            <div class="category-icon-wrap"><i class="fas fa-soap"></i></div>
+            <h2 class="category-title">🧼 Jabones Artesanales</h2>
+        </div>
+
+        <div class="catalog-grid">
+            <div class="product-card" data-category="jabon" data-id="8" data-name="Jabón Arroz y Romero" data-price="350" data-img="arrzos.png" data-desc="Hidrata, suaviza e ilumina la piel. Propiedades antioxidantes." data-tag="Suavidad">
+                <span class="product-badge badge-popular">🌾 Natural</span>
+                <div class="product-image-wrap"><img src="arrzos.png" alt="Jabón Arroz y Romero"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-leaf"></i> Suavidad</div>
+                    <h3 class="product-name">Jabón Arroz y Romero</h3>
+                    <p class="product-desc">Ilumina y reduce imperfecciones.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$350</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="jabon" data-id="9" data-name="Jabón Colágeno y Rosa" data-price="450" data-img="calegno.png" data-desc="Hidrata, rejuvenece y mejora la elasticidad de la piel." data-tag="Reafirmante">
+                <span class="product-badge badge-premium">🌸 Reafirmante</span>
+                <div class="product-image-wrap"><img src="calegno.png" alt="Jabón Colágeno y Rosa"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-heart"></i> Rejuvenecedor</div>
+                    <h3 class="product-name">Jabón Colágeno y Rosa</h3>
+                    <p class="product-desc">Reduce arrugas y cicatrices.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$450</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="jabon" data-id="10" data-name="Jabón Limón y Mosqueta" data-price="350" data-img="limondejabon.png" data-desc="Exfoliante, desinfectante, ilumina manchas y equilibra el pH." data-tag="Iluminador">
+                <span class="product-badge badge-nuevo">🍋 Iluminador</span>
+                <div class="product-image-wrap"><img src="limondejabon.png" alt="Jabón Limón y Mosqueta"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-sun"></i> Iluminador</div>
+                    <h3 class="product-name">Jabón Limón y Mosqueta</h3>
+                    <p class="product-desc">Combate manchas y limpia profundamente.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$350</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="jabon" data-id="13" data-name="Jabón Arroz y Cúrcuma" data-price="350" data-img="arrozcurcuma.png" data-desc="Ilumina, exfolia y mejora el tono de la piel." data-tag="Radiante">
+                <span class="product-badge badge-popular">✨ Radiante</span>
+                <div class="product-image-wrap"><img src="arrozcurcuma.png" alt="Jabón Arroz y Cúrcuma"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-star"></i> Radiante</div>
+                    <h3 class="product-name">Jabón Arroz y Cúrcuma</h3>
+                    <p class="product-desc">Reduce manchas e inflamación.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$350</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="jabon" data-id="14" data-name="Jabón de Avena" data-price="350" data-img="avena.png" data-desc="Calma, hidrata y exfolia suavemente. Ideal para pieles sensibles." data-tag="Calmante">
+                <span class="product-badge badge-nuevo">🌾 Calmante</span>
+                <div class="product-image-wrap"><img src="avena.png" alt="Jabón de Avena"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-cloud"></i> Calmante</div>
+                    <h3 class="product-name">Jabón de Avena</h3>
+                    <p class="product-desc">Alivia irritaciones y mantiene la piel suave.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$350</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SECCIÓN 4: SPA & TRATAMIENTOS CORPORALES -->
+    <!-- ============================================ -->
+    <div class="category-section">
+        <div class="category-header">
+            <div class="category-icon-wrap"><i class="fas fa-spa"></i></div>
+            <h2 class="category-title">💆‍♀️ Spa & Tratamientos Corporales</h2>
+        </div>
+
+        <div class="catalog-grid">
+            <div class="product-card" data-category="spa" data-id="15" data-name="Peeling Descamante" data-price="650" data-img="levin.png" data-desc="Exfoliación profunda, elimina células muertas, piel renovada y luminosa." data-tag="Renovador">
+                <span class="product-badge badge-premium">⭐ 2oz</span>
+                <div class="product-image-wrap"><img src="levin.png" alt="Peeling Descamante"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-sync-alt"></i> Renovador</div>
+                    <h3 class="product-name">Peeling Descamante</h3>
+                    <p class="product-desc">Exfoliación profunda para una piel más suave.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$650</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="spa" data-id="16" data-name="Gel de Aloe Vera" data-price="400" data-img="aloe.png" data-desc="Calma, hidrata y regenera la piel. Propiedades antiinflamatorias." data-tag="Regenerador">
+                <span class="product-badge badge-popular">🌵 8oz</span>
+                <div class="product-image-wrap"><img src="gel.png" alt="Gel de Aloe Vera"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-leaf"></i> Regenerador</div>
+                    <h3 class="product-name">Gel de Aloe Vera</h3>
+                    <p class="product-desc">Ideal para quemaduras, irritaciones y acné.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$400</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="spa" data-id="17" data-name="Gel Conductor" data-price="1000" data-img="gel conducot.png" data-desc="Mejora la eficacia de tratamientos, hidrata y protege contra irritaciones." data-tag="Profesional">
+                <span class="product-badge badge-premium">⚡ 128oz</span>
+                <div class="product-image-wrap"><img src="gel conducot.png" alt="Gel Conductor"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-bolt"></i> Profesional</div>
+                    <h3 class="product-name">Gel Conductor</h3>
+                    <p class="product-desc">Para ultrasonido y radiofrecuencia.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$1,000</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="spa" data-id="18" data-name="Crema Reductora" data-price="700" data-img="crema reductora.png" data-desc="Estimula la circulación, elimina grasa localizada y combate la celulitis." data-tag="Reductora">
+                <span class="product-badge badge-especial">🔥 32oz</span>
+                <div class="product-image-wrap"><img src="crema reductora.png" alt="Crema Reductora"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-fire"></i> Reductora</div>
+                    <h3 class="product-name">Crema Reductora</h3>
+                    <p class="product-desc">Mejora firmeza y contornea el cuerpo.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$700</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="spa" data-id="19" data-name="Gel de Crioterapia" data-price="800" data-img="dios.png" data-desc="Activa la circulación, reduce medidas y combate la celulitis con efecto refrescante." data-tag="Criogel">
+                <span class="product-badge badge-nuevo">❄️ 8oz</span>
+                <div class="product-image-wrap"><img src="dios.png" alt="Gel de Crioterapia"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-snowflake"></i> Criogel</div>
+                    <h3 class="product-name">Gel de Crioterapia</h3>
+                    <p class="product-desc">Efecto frío para reducir medidas.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$800</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="spa" data-id="20" data-name="Gel de Venda Fría" data-price="650" data-img="ventafria.png" data-desc="Tonifica, reduce medidas y combate la celulitis con su efecto frío." data-tag="Moldeador">
+                <span class="product-badge badge-popular">🧊 8oz</span>
+                <div class="product-image-wrap"><img src="ventafria.png" alt="Gel de Venda Fría"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-snowflake"></i> Moldeador</div>
+                    <h3 class="product-name">Gel de Venda Fría</h3>
+                    <p class="product-desc">Tonifica y reduce la apariencia de celulitis.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$650</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="spa" data-id="21" data-name="Gel Reductor" data-price="1200" data-img="gel.png" data-desc="Mejora la circulación, reduce la celulitis y tonifica la piel. Acción reafirmante." data-tag="Quemagrasa">
+                <span class="product-badge badge-premium">💪 Más Vendido</span>
+                <div class="product-image-wrap"><img src="" alt="Gel Reductor"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-chart-line"></i> Quemagrasa</div>
+                    <h3 class="product-name">Gel Reductor</h3>
+                    <p class="product-desc">Piel más firme y contorneada.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$1,200</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SECCIÓN 5: CUIDADO CAPILAR Y TRATAMIENTOS (SIN SHAMPOO) -->
+    <!-- ============================================ -->
+    <div class="category-section">
+        <div class="category-header">
+            <div class="category-icon-wrap"><i class="fas fa-droplet"></i></div>
+            <h2 class="category-title">💇 Cuidado Capilar & Tratamientos</h2>
+        </div>
+
+        <div class="catalog-grid">
+            <!-- ACEITE NATURAL (sin shampoo) -->
+            <div class="product-card" data-category="cabello" data-id="23" data-name="Aceite Natural Nairobi" data-price="2500" data-img="aceite.png" data-desc="Nutrición intensa, brillo y reparación de puntas." data-tag="Elixir">
+                <span class="product-badge badge-especial">✨ Elixir</span>
+                <div class="product-image-wrap"><img src="aceite.png" alt="Aceite Natural"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-oil-can"></i> Elixir</div>
+                    <h3 class="product-name">Aceite Natural Nairobi</h3>
+                    <p class="product-desc">Nutre, repara y aporta brillo al cabello.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$2,500</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="tratamiento" data-id="24" data-name="Gotero Natural" data-price="950" data-img="gotero.png" data-desc="Anti-caída y crecimiento capilar. Estimula y fortalece la raíz." data-tag="Tratamiento">
+                <span class="product-badge badge-nuevo">🌱 Nuevo</span>
+                <div class="product-image-wrap"><img src="gotero.png" alt="Gotero Natural"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-eye-dropper"></i> Anti-caída</div>
+                    <h3 class="product-name">Gotero Natural</h3>
+                    <p class="product-desc">Estimula el crecimiento y fortalece la raíz.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$950</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="tratamiento" data-id="25" data-name="Lumisebo" data-price="950" data-img="lumi sebo.jpeg" data-desc="Tratamiento fortalecedor natural con sebo de res, manteca de karité y aceites esenciales." data-tag="Fortalecedor">
+                <span class="product-badge badge-popular">🔥 Especial</span>
+                <div class="product-image-wrap"><img src="lumi sebo.jpeg" alt="Lumisebo"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-fire"></i> Fortalecedor</div>
+                    <h3 class="product-name">Lumisebo</h3>
+                    <p class="product-desc">Tratamiento fortalecedor natural.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$2,500</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="tratamiento" data-id="26" data-name="Gel de Aloe Vera Capilar" data-price="1650" data-img="elixir.png" data-desc="Acondiciona, nutre y revitaliza tu cabello con activos 100% naturales." data-tag="Revitalizante">
+                <span class="product-badge badge-premium">✨ Elixir</span>
+                <div class="product-image-wrap"><img src="elixir.png" alt="Gel de Aloe Vera Capilar"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-flask"></i> Revitalizante</div>
+                    <h3 class="product-name">Gel de Aloe Vera Capilar</h3>
+                    <p class="product-desc">Acondiciona, nutre y revitaliza tu cabello.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$1,650</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="tratamiento" data-id="27" data-name="Producto de Espazo" data-price="1000" data-img="espazo.png" data-desc="Tratamiento especial para rejuvenecimiento capilar. Resultados visibles desde la primera aplicación." data-tag="Rejuvenecedor">
+                <span class="product-badge badge-nuevo">✨ Nuevo</span>
+                <div class="product-image-wrap"><img src="espazo.png" alt="Producto de Espazo"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-spa"></i> Rejuvenecedor</div>
+                    <h3 class="product-name">Producto de Espazo</h3>
+                    <p class="product-desc">Rejuvenecimiento capilar avanzado.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$1,000</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SECCIÓN 6: LÍNEAS COMPLETAS -->
+    <!-- ============================================ -->
+    <div class="category-section">
+        <div class="category-header">
+            <div class="category-icon-wrap"><i class="fas fa-box-open"></i></div>
+            <h2 class="category-title">📦 Líneas Completas</h2>
+        </div>
+
+        <div class="catalog-grid">
+            <div class="product-card" data-category="linea" data-id="28" data-name="Línea Artesanal" data-price="4000" data-img="linea-artesanal.png" data-desc="Kit completo de cuidado capilar artesanal. Rutina 100% natural sin químicos dañinos." data-tag="Premium">
+                <span class="product-badge badge-premium">💎 Premium</span>
+                <div class="product-image-wrap"><img src="capilar-kit.png" alt="Línea Artesanal"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-droplet"></i> Línea completa</div>
+                    <h3 class="product-name">Línea Artesanal</h3>
+                    <p class="product-desc">Kit completo cuidado capilar artesanal.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$4,000</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-card" data-category="linea" data-id="29" data-name="Línea de Rizos" data-price="4000" data-img="rizo.png" data-desc="Define, hidrata y controla el frizz. Especial para cabellos rizados y afros." data-tag="Rizos">
+                <span class="product-badge badge-popular">✨ Favorita</span>
+                <div class="product-image-wrap"><img src="rizo.png" alt="Línea de Rizos"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-water"></i> Rizos y afros</div>
+                    <h3 class="product-name">Línea de Rizos</h3>
+                    <p class="product-desc">Define, hidrata y controla el frizz.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$4,000</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SECCIÓN 7: KITS ESPECIALES -->
+    <!-- ============================================ -->
+    <div class="category-section">
+        <div class="category-header">
+            <div class="category-icon-wrap"><i class="fas fa-gift"></i></div>
+            <h2 class="category-title">🎁 Kits Especiales</h2>
+        </div>
+
+        <div class="catalog-grid">
+            <div class="product-card" data-category="kit" data-id="30" data-name="Kit de Cirugía Capilar" data-price="1200" data-img="capilar-kit.png" data-desc="Kit profesional que incluye Líquido Profundo + Abate Náutico para regeneración capilar avanzada." data-tag="Kit Premium">
+                <span class="product-badge badge-especial">🔥 1.00% OFF</span>
+                <div class="product-image-wrap"><img src="capilar-kit.png" alt="Kit de Cirugía Capilar"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-cut"></i> Cirugía Capilar</div>
+                    <h3 class="product-name">Kit de Cirugía Capilar</h3>
+                    <p class="product-desc">Regeneración capilar avanzada.</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$1,600</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- SECCIÓN 8: ROL-ON NATURAL -->
+    <!-- ============================================ -->
+    <div class="category-section">
+        <div class="category-header">
+            <div class="category-icon-wrap"><i class="fas fa-oil-can"></i></div>
+            <h2 class="category-title">💧 Rol-On Natural</h2>
+        </div>
+
+        <div class="catalog-grid">
+            <div class="product-card" data-category="rolon" data-id="31" data-name="Rol-On Nairobi Artesanal" data-price="450" data-img="rolon.png" data-desc="Feromonas - 10ml. Aroma natural que atrae y genera confianza." data-tag="Feromonas">
+                <span class="product-badge badge-nuevo">💧 Nuevo</span>
+                <div class="product-image-wrap"><img src="rolon.png" alt="Rol-On Nairobi Artesanal"></div>
+                <div class="product-body">
+                    <div class="product-category-tag"><i class="fas fa-oil-can"></i> Feromonas</div>
+                    <h3 class="product-name">Rol-On Nairobi Artesanal</h3>
+                    <p class="product-desc">Feromonas - 10ml - Aroma natural</p>
+                    <div class="product-footer">
+                        <div class="product-price">RD$750</div>
+                        <button class="add-btn"><i class="fas fa-cart-plus"></i> Agregar</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<!-- MODAL -->
+<div class="modal-overlay" id="modalOverlay"></div>
+
+<div class="product-modal" id="productModal">
+    <button class="modal-close" id="modalCloseBtn">×</button>
+
+    <div class="modal-grid">
+        <div class="modal-image">
+            <img id="modalImg" src="" alt="">
+        </div>
+
+        <div class="modal-info">
+            <div class="modal-cat-tag" id="modalCatTag"></div>
+            <h2 class="modal-title" id="modalTitle"></h2>
+            <p class="modal-desc" id="modalDesc"></p>
+            <div class="modal-price" id="modalPrice"></div>
+
+            <div class="modal-actions">
+                <button class="modal-add-btn" id="modalAddBtn">
+                    <i class="fas fa-cart-plus"></i>
+                    Agregar al carrito
+                </button>
+
+                <a href="https://wa.me/18299693324" target="_blank" class="modal-wa-btn">
+                    <i class="fab fa-whatsapp"></i>
+                    WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- CARRITO -->
+<div class="cart-overlay-main" id="cartOverlay"></div>
+
+<div class="cart-modal" id="cartModal">
+
+    <div class="cart-header">
+        <h3><i class="fas fa-cart-shopping"></i> Mi carrito</h3>
+        <button class="close-cart" id="closeCartBtn">&times;</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+        <div class="empty-cart">🌸 Tu carrito está vacío</div>
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">RD$0</span>
+        </div>
+
+        <div class="checkout-form">
+            <h3>🌸 Completa tu pedido</h3>
+
+            <input type="text" id="clienteNombre" placeholder="Tu nombre completo">
+            <input type="tel" id="clienteWhatsapp" placeholder="Tu WhatsApp">
+            <input type="text" id="clienteDireccion" placeholder="Tu dirección completa">
+
+            <select id="metodoPago">
+                <option value="">📌 Método de pago</option>
+                <option value="Efectivo">💰 Efectivo</option>
+                <option value="Transferencia">🏦 Transferencia</option>
+                <option value="Yappy">📱 Yappy</option>
+            </select>
+
+            <textarea id="comentarioPedido" rows="3" placeholder="Notas adicionales..."></textarea>
+        </div>
+
+        <button class="checkout-btn" id="checkoutBtn">
+            <i class="fab fa-whatsapp"></i>
+            Enviar pedido por WhatsApp
+        </button>
+    </div>
+</div>
+
+<!-- TOAST -->
+<div class="toast-notification" id="toast"></div>
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-brand">
+            <i class="fas fa-leaf"></i>
+            <span>Nairobi Artesanal SRL</span>
+            <p>Belleza natural para tu cabello y piel 🌸</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2025 Nairobi Artesanal SRL — Hecho con amor 🌸
+    </div>
+</footer>
+
+<script>
+// WHATSAPP
+const WHATSAPP_NUMBER = "18299693324";
+const whatsappBase = (message) => `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+// DATOS DE PRODUCTOS
+const productCards = document.querySelectorAll('.product-card');
+const products = [];
+
+productCards.forEach((card, index) => {
+    products.push({
+        id: parseInt(card.dataset.id),
+        name: card.dataset.name,
+        price: parseInt(card.dataset.price),
+        category: card.dataset.category,
+        img: card.dataset.img,
+        desc: card.dataset.desc,
+        badge: card.dataset.badge,
+        tag: card.dataset.tag
+    });
+    const addBtn = card.querySelector('.add-btn');
+    if (addBtn) addBtn.setAttribute('data-index', index);
+});
+
+// CARRITO
+let cart = JSON.parse(localStorage.getItem('cart')) || [];
+
+function saveCart() {
+    localStorage.setItem('cart', JSON.stringify(cart));
+    updateCartUI();
+}
+
+function updateCartUI() {
+    let total = 0;
+    let totalItems = 0;
+    cart.forEach(item => {
+        total += item.price * item.quantity;
+        totalItems += item.quantity;
+    });
+    const cartTotal = document.getElementById('cartTotal');
+    const cartCount = document.getElementById('cartCount');
+    if (cartTotal) cartTotal.textContent = `RD$${total}`;
+    if (cartCount) cartCount.textContent = totalItems;
+    
+    const container = document.getElementById('cartItems');
+    if (container) {
+        if (cart.length === 0) {
+            container.innerHTML = '<div class="empty-cart">🌸 Tu carrito está vacío</div>';
+        } else {
+            container.innerHTML = '';
+            cart.forEach((item, idx) => {
+                const div = document.createElement('div');
+                div.className = 'cart-item';
+                div.innerHTML = `
+                    <div class="cart-item-info">
+                        <h4>${item.name}</h4>
+                        <p>RD$${item.price} x ${item.quantity}</p>
+                        <p class="cart-item-subtotal">Subtotal: RD$${item.price * item.quantity}</p>
+                    </div>
+                    <div class="cart-item-actions">
+                        <button onclick="changeQty(${idx}, -1)">-</button>
+                        <span>${item.quantity}</span>
+                        <button onclick="changeQty(${idx}, 1)">+</button>
+                        <button onclick="removeItem(${idx})"><i class="fas fa-trash"></i></button>
+                    </div>
+                `;
+                container.appendChild(div);
+            });
+        }
+    }
+}
+
+window.changeQty = (idx, delta) => {
+    if (cart[idx].quantity + delta > 0) cart[idx].quantity += delta;
+    else cart.splice(idx, 1);
+    saveCart();
+};
+
+window.removeItem = (idx) => {
+    cart.splice(idx, 1);
+    saveCart();
+};
+
+function showToast(message) {
+    const toast = document.getElementById('toast');
+    if (toast) {
+        toast.textContent = message;
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2500);
+    }
+}
+
+function addToCart(product, index) {
+    const existing = cart.find(item => item.id === product.id);
+    if (existing) existing.quantity++;
+    else cart.push({ id: product.id, name: product.name, price: product.price, quantity: 1, img: product.img });
+    saveCart();
+    showToast(`✨ ${product.name} agregado al carrito`);
+    
+    const btns = document.querySelectorAll('.add-btn');
+    if (btns[index]) {
+        const original = btns[index].innerHTML;
+        btns[index].innerHTML = '<i class="fas fa-check"></i> ¡Agregado!';
+        setTimeout(() => btns[index].innerHTML = original, 900);
+    }
+}
+
+document.querySelectorAll('.add-btn').forEach((btn, idx) => {
+    btn.addEventListener('click', (e) => {
+        e.stopPropagation();
+        if (products[idx]) addToCart(products[idx], idx);
+    });
+});
+
+// FILTROS
+const filterBtns = document.querySelectorAll('.filter-btn');
+const allProductCards = document.querySelectorAll('.product-card');
+
+filterBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.dataset.filter;
+        allProductCards.forEach(card => {
+            if (filter === 'all' || card.dataset.category === filter) card.style.display = 'block';
+            else card.style.display = 'none';
+        });
+    });
+});
+
+// MODAL
+const modalOverlay = document.getElementById('modalOverlay');
+const productModal = document.getElementById('productModal');
+const modalCloseBtn = document.getElementById('modalCloseBtn');
+let currentModalIndex = null;
+
+function openModal(index) {
+    const p = products[index];
+    if (!p) return;
+    currentModalIndex = index;
+    document.getElementById('modalImg').src = p.img;
+    document.getElementById('modalCatTag').textContent = p.tag;
+    document.getElementById('modalTitle').textContent = p.name;
+    document.getElementById('modalDesc').textContent = p.desc;
+    document.getElementById('modalPrice').textContent = `RD$${p.price}`;
+    modalOverlay.classList.add('active');
+    productModal.classList.add('active');
+}
+
+function closeModal() {
+    modalOverlay.classList.remove('active');
+    productModal.classList.remove('active');
+    currentModalIndex = null;
+}
+
+document.querySelectorAll('.product-image-wrap').forEach((wrap, idx) => {
+    wrap.style.cursor = 'pointer';
+    wrap.addEventListener('click', () => openModal(idx));
+});
+
+if (modalCloseBtn) modalCloseBtn.addEventListener('click', closeModal);
+if (modalOverlay) modalOverlay.addEventListener('click', closeModal);
+
+const modalAddBtn = document.getElementById('modalAddBtn');
+if (modalAddBtn) {
+    modalAddBtn.addEventListener('click', () => {
+        if (currentModalIndex !== null) {
+            addToCart(products[currentModalIndex], currentModalIndex);
+            closeModal();
+        }
+    });
+}
+
+// MODAL CARRITO
+const cartIcon = document.getElementById('cartIcon');
+const cartModal = document.getElementById('cartModal');
+const cartOverlay = document.getElementById('cartOverlay');
+const closeCartBtn = document.getElementById('closeCartBtn');
+
+if (cartIcon) cartIcon.addEventListener('click', () => { cartModal.classList.add('open'); cartOverlay.classList.add('open'); });
+function closeCart() { cartModal?.classList.remove('open'); cartOverlay?.classList.remove('open'); }
+if (closeCartBtn) closeCartBtn.addEventListener('click', closeCart);
+if (cartOverlay) cartOverlay.addEventListener('click', closeCart);
+
+// CHECKOUT WHATSAPP
+const checkoutBtn = document.getElementById('checkoutBtn');
+if (checkoutBtn) {
+    checkoutBtn.addEventListener('click', () => {
+        if (cart.length === 0) { alert('🌸 Tu carrito está vacío'); return; }
+        const nombre = document.getElementById('clienteNombre')?.value.trim();
+        const whatsapp = document.getElementById('clienteWhatsapp')?.value.trim();
+        const direccion = document.getElementById('clienteDireccion')?.value.trim();
+        const metodoPago = document.getElementById('metodoPago')?.value;
+        const comentario = document.getElementById('comentarioPedido')?.value.trim();
+        
+        if (!nombre) { alert('❌ Ingresa tu nombre'); return; }
+        if (!whatsapp) { alert('❌ Ingresa tu WhatsApp'); return; }
+        if (!direccion) { alert('❌ Ingresa tu dirección'); return; }
+        if (!metodoPago) { alert('❌ Selecciona método de pago'); return; }
+        
+        let total = 0;
+        let message = `🌸 *PEDIDO NAIROBI ARTESANAL* 🌸\n\n👤 *Cliente:* ${nombre}\n📱 *WhatsApp:* ${whatsapp}\n📍 *Dirección:* ${direccion}\n💳 *Método de pago:* ${metodoPago}\n\n📦 *PRODUCTOS:*\n━━━━━━━━━━━━━━━━━━━━━\n`;
+        
+        cart.forEach(item => {
+            const subtotal = item.price * item.quantity;
+            total += subtotal;
+            message += `✨ ${item.name}\n   Cantidad: ${item.quantity}\n   Subtotal: RD$${subtotal}\n\n`;
+        });
+        
+        message += `━━━━━━━━━━━━━━━━━━━━━\n💰 *TOTAL: RD$${total}*\n\n`;
+        if (comentario) message += `📝 *Notas:*\n${comentario}\n\n`;
+        message += `🙏 *Gracias por comprar en Nairobi Artesanal SRL* 🌸`;
+        
+        window.open(whatsappBase(message), '_blank');
+        cart = [];
+        saveCart();
+        closeCart();
+        alert('✅ ¡Pedido enviado correctamente!');
+    });
+}
+
+document.addEventListener('keydown', (e) => { if (e.key === 'Escape') { closeModal(); closeCart(); } });
+saveCart();
+</script>
+</body>
+</html>

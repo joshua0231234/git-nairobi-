@@ -1,0 +1,1017 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<title>Nairobi Artesanal | Belleza Natural</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<!-- CSS externo -->
+<link rel="stylesheet" href="clase.css">
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar">
+
+    <div class="logo">
+        <div class="logo-icon">
+            <i class="fas fa-leaf"></i>
+        </div>
+
+        <div class="logo-text">
+            <span class="logo-name">Nairobi Artesanal</span>
+            <span class="logo-tag">Naturalmente hecho con amor</span>
+        </div>
+    </div>
+
+    <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#mision">Misión & Visión</a></li>
+        <li><a href="#kit">Kit Integral</a></li>
+        <li><a href="#ventajas">Ventajas</a></li>
+        <li><a href="#testimonios">Opiniones</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+
+    <div class="nav-actions">
+
+        <a href="https://www.facebook.com/profile.php?id=61570576890740" target="_blank" class="facebook-nav">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="https://www.instagram.com/nairobiartesanal?utm_source=qr&igsh=MTlsZDlhdDQwejBoOQ%3D%3D" target="_blank" class="instagram-nav">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <div class="cart-icon" id="cartIcon">
+            <i class="fas fa-cart-shopping"></i>
+            <span class="cart-count" id="cartCount">0</span>
+        </div>
+
+        <div class="menu-icon" id="menuIcon">
+            <i class="fas fa-bars"></i>
+        </div>
+
+    </div>
+
+</nav>
+
+<!-- CARRITO MODAL -->
+<div class="cart-overlay" id="cartOverlay"></div>
+
+<div class="cart-modal" id="cartModal">
+
+    <div class="cart-header">
+        <h3><i class="fas fa-cart-shopping"></i> Mi carrito</h3>
+        <button class="close-cart" id="closeCartBtn">&times;</button>
+    </div>
+
+    <div class="cart-items" id="cartItems">
+        <div class="empty-cart">
+            <i class="fas fa-shopping-bag"></i>
+            🌸 Tu carrito está vacío
+            <p style="font-size: 0.8rem; margin-top: 10px;">Agrega productos para comenzar</p>
+        </div>
+    </div>
+
+    <div class="cart-footer">
+
+        <div class="cart-total">
+            <span>Total:</span>
+            <span id="cartTotal">RD$0</span>
+        </div>
+
+        <div class="checkout-form">
+
+            <h3>🌸 Completa tu pedido</h3>
+
+            <input type="text" id="clienteNombre" placeholder="Tu nombre completo *" required>
+
+            <input type="tel" id="clienteWhatsapp" placeholder="Tu WhatsApp * (ej: 8291234567)" required>
+
+            <input type="text" id="clienteDireccion" placeholder="Tu dirección completa *" required>
+
+            <select id="metodoPago" required>
+                <option value="">📌 Método de pago *</option>
+                <option value="Efectivo">💰 Efectivo</option>
+                <option value="Transferencia">🏦 Transferencia bancaria</option>
+                <option value="Yappy">📱 Yappy</option>
+            </select>
+
+            <textarea id="comentarioPedido" placeholder="Notas adicionales... (opcional)"></textarea>
+
+        </div>
+
+        <button class="checkout-btn" id="checkoutBtn">
+            <i class="fab fa-whatsapp"></i>
+            Enviar pedido por WhatsApp
+        </button>
+
+    </div>
+
+</div>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            <i class="fas fa-heart"></i>
+            Naturalmente hecho con amor
+        </div>
+
+        <h1>Productos artesanales para el cuidado del cabello 🌸</h1>
+
+        <p>
+            Elaborados con ingredientes naturales cuidadosamente seleccionados.
+            Personalizados para ti, respetuosos con el planeta.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#productos" class="btn btn-primary">
+                <i class="fas fa-leaf"></i>
+                Ver productos
+            </a>
+
+            <a href="https://wa.me/18299693324" target="_blank" class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                Pedir ahora
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- SOBRE NOSOTROS - CORREGIDO CON 4 VALORES -->
+<section class="nosotros" id="nosotros">
+
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-tag">Conócenos</span>
+            <h2>Cuidado capilar artesanal con alma</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="nosotros-content" style="max-width: 1000px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 30px;">
+                Somos una empresa dedicada a la fabricación de productos para el cuidado personal con un enfoque natural y respetuoso con el medio ambiente. Nos dirigimos a mujeres  que valoran lo hecho a mano y cuidan de su bienestar.
+            </p>
+            <p style="font-size: 1.1rem; line-height: 1.8; margin-bottom: 50px;">
+                Cada producto está formulado con ingredientes naturales para nutrir, fortalecer y embellecer tu cabello sin comprometer tu salud ni el planeta.
+            </p>
+
+            <div class="cards" style="grid-template-columns: repeat(4, 1fr); gap: 25px;">
+                
+                <!-- Valor 1: 100% Natural -->
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <div class="card-icon" style="margin: 0 auto 20px auto;">🌿</div>
+                        <h3>100% Natural</h3>
+                        <p>Ingredientes naturales libres de químicos agresivos como parabenos y sulfatos.</p>
+                    </div>
+                </div>
+                
+                <!-- Valor 2: Hecho a Mano -->
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <div class="card-icon" style="margin: 0 auto 20px auto;">✋</div>
+                        <h3>Hecho a Mano</h3>
+                        <p>Elaboración artesanal con atención al detalle y mucho amor en cada producto.</p>
+                    </div>
+                </div>
+                
+                <!-- Valor 3: Eco-consciente -->
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <div class="card-icon" style="margin: 0 auto 20px auto;">🌍</div>
+                        <h3>Eco-consciente</h3>
+                        <p>Packaging sostenible y producción responsable con el medio ambiente.</p>
+                    </div>
+                </div>
+
+                <!-- Valor 4: Sin Crueldad Animal (NUEVO) -->
+                <div class="card">
+                    <div class="card-content" style="text-align: center;">
+                        <div class="card-icon" style="margin: 0 auto 20px auto;">🐰</div>
+                        <h3>Sin Crueldad Animal</h3>
+                        <p>No testeamos en animales. Todos nuestros productos son cruelty-free y 100% éticos.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- MISION & VISION -->
+<section class="mision-vision" id="mision">
+
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-tag">Nuestra esencia</span>
+            <h2>Misión & Visión</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-content" style="text-align:center;">
+                    <div class="card-icon" style="margin:auto auto 20px auto;">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3>🌿 Misión</h3>
+                    <p>
+                        Ser la referencia a nivel nacional en productos para el cuidado personal, especialmente en el segmento capilar. Destacamos por nuestro enfoque artesanal y el uso de ingredientes naturales, proporcionando soluciones efectivas y personalizadas para cada tipo de cabello, promoviendo un estilo de vida más saludable y sostenible.
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content" style="text-align:center;">
+                    <div class="card-icon" style="margin:auto auto 20px auto;">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h3>✨ Visión</h3>
+                    <p>
+                        Ser una marca reconocida por su excelencia y adaptabilidad, conocida por brindar una experiencia única a cada cliente. Consideramos las condiciones individuales de tu cabello y ofrecemos soluciones personalizadas, manteniéndonos comprometidos con la calidad, la innovación y el cuidado del planeta.
+                    </p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- PRODUCTOS -->
+<section class="productos" id="productos">
+
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-tag">Colección</span>
+            <h2>Nuestros productos</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="2.png" alt="Jabón">
+                </div>
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-pump-soap"></i></div>
+                    <h3>Jabón de limón y bicarbonato</h3>
+                    <p>Limpieza profunda sin sulfatos.</p>
+                    <div class="card-price">RD$350</div>
+                    <button class="btn-add" data-id="1" data-name="Jabón de limón y bicarbonato" data-price="350">
+                        <i class="fas fa-cart-plus"></i> Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="capilar-kit.png" alt="">
+                </div>
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-droplet"></i></div>
+                    <h3>Línea Artesanal para el cabello</h3>
+                    <p>Artesanal para Cabello.</p>
+                    <div class="card-price">RD$4000</div>
+                    <button class="btn-add" data-id="2" data-name="Línea Artesanal para el cabello" data-price="4000">
+                        <i class="fas fa-cart-plus"></i> Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="1.jpeg" alt="">
+                </div>
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-water"></i></div>
+                    <h3>Línea de rizos</h3>
+                    <p>Define y controla el frizz.</p>
+                    <div class="card-price">RD$4000</div>
+                    <button class="btn-add" data-id="3" data-name="Línea de rizos" data-price="4000">
+                        <i class="fas fa-cart-plus"></i> Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="gotero.png" alt="">
+                </div>
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-eye-dropper"></i></div>
+                    <h3>Gotero Natural</h3>
+                    <p>Anti-caída & crecimiento.</p>
+                    <div class="card-price">RD$950</div>
+                    <button class="btn-add" data-id="4" data-name="Gotero Natural" data-price="950">
+                        <i class="fas fa-cart-plus"></i> Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="otra vez.png" alt="">
+                </div>
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-fire"></i></div>
+                    <h3>Lumisebo</h3>
+                    <p>Tratamiento natural.</p>
+                    <div class="card-price">RD$2500</div>
+                    <button class="btn-add" data-id="5" data-name="Lumisebo" data-price="2500">
+                        <i class="fas fa-cart-plus"></i> Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-image">
+                    <img src="crema reductora.png" alt="">
+                </div>
+                <div class="card-content">
+                    <div class="card-icon"><i class="fas fa-spa"></i></div>
+                    <h3>Crema Reductora</h3>
+                    <p>Ayuda a reducir medidas.</p>
+                    <div class="card-price">RD$650</div>
+                    <button class="btn-add" data-id="6" data-name="Crema Reductora" data-price="650">
+                        <i class="fas fa-cart-plus"></i> Agregar al carrito
+                    </button>
+                </div>
+            </div>
+
+        </div>
+
+        <div style="text-align:center; margin-top:60px;">
+            <a href="catalogo.html" class="btn btn-primary">
+                <i class="fas fa-book-open"></i> Ver catálogo completo
+            </a>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- KIT INTEGRAL -->
+<section class="kit" id="kit">
+
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-tag">Kit Completo</span>
+            <h2>Kit Integral de Cuidado Capilar</h2>
+            <div class="section-divider"></div>
+            <p style="max-width: 700px; margin: 20px auto 0; color: var(--texto-light);">
+                Un conjunto completo de 7 productos artesanales diseñados para transformar la salud y apariencia de tu cabello de manera natural y efectiva.
+            </p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-content" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 20px auto;">🧴</div>
+                    <h3>Shampoo Natural</h3>
+                    <p>Fórmula suave que limpia delicadamente el cabello sin dañarlo, con ingredientes naturales que nutren y fortalecen desde la raíz.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 20px auto;">💧</div>
+                    <h3>Acondicionador</h3>
+                    <p>Enriquecido con hidratantes naturales para un cabello sedoso, suave y manejable, con protección contra el daño ambiental.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 20px auto;">💫</div>
+                    <h3>Gel de Rizos</h3>
+                    <p>Con colágeno natural para definir y dar forma a tus rizos, mejorando su elasticidad y manteniéndolos saludables y brillantes.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 20px auto;">✨</div>
+                    <h3>Gotas para la Caída</h3>
+                    <p>Combinación de ingredientes naturales que fortalecen las raíces, reducen la caída y estimulan el crecimiento saludable del cabello.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 20px auto;">🌟</div>
+                    <h3>Jalea para Peinado</h3>
+                    <p>Fijación suave y flexible para cualquier peinado. Sin sensación pesada ni pegajosa, con acabado natural y duradero.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 20px auto;">🌿</div>
+                    <h3>Leave-In (Aceite)</h3>
+                    <p>Aceite ligero y nutritivo que protege del calor, mantiene la hidratación y aporta brillo durante todo el día.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content" style="text-align: center;">
+                    <div class="card-icon" style="margin: 0 auto 20px auto;">💆</div>
+                    <h3>Mascarilla Intensiva</h3>
+                    <p>Hidratación profunda semanal que repara el cabello dañado, mejora su salud y le devuelve vida, brillo y elasticidad.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- VENTAJAS COMPETITIVAS -->
+<section class="ventajas" id="ventajas">
+
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-tag">¿Por qué elegirnos?</span>
+            <h2>Nuestras Ventajas Competitivas</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="card-content" style="text-align:center">
+                    <div class="card-icon" style="margin:0 auto 20px auto">🌱</div>
+                    <h3>Artesanal y Natural</h3>
+                    <p>Elaborados a mano con ingredientes naturales seleccionados, libres de químicos agresivos presentes en marcas comerciales.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content" style="text-align:center">
+                    <div class="card-icon" style="margin:0 auto 20px auto">👩</div>
+                    <h3>Atención Personalizada</h3>
+                    <p>Analizamos las condiciones de tu cabello y te recomendamos la combinación perfecta para tus necesidades específicas.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content" style="text-align:center">
+                    <div class="card-icon" style="margin:0 auto 20px auto">♻️</div>
+                    <h3>Conciencia Ambiental</h3>
+                    <p>Producción sostenible, empaques eco-friendly y prácticas responsables para cuidar el planeta que compartimos.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content" style="text-align:center">
+                    <div class="card-icon" style="margin:0 auto 20px auto">🏠</div>
+                    <h3>Producción Local</h3>
+                    <p>Comprometidos con la comunidad y la economía local, apoyando el desarrollo artesanal y sostenible.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content" style="text-align:center">
+                    <div class="card-icon" style="margin:0 auto 20px auto">⭐</div>
+                    <h3>Alta Calidad</h3>
+                    <p>Rigurosos estándares en todos los procesos de producción para garantizar productos premium.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-content" style="text-align:center">
+                    <div class="card-icon" style="margin:0 auto 20px auto">💬</div>
+                    <h3>Programa de Referidos</h3>
+                    <p>Comparte la marca con amigas y recibe recompensas exclusivas mientras nuestra comunidad sigue creciendo.</p>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- ESTRATEGIA DE MARKETING -->
+<section class="marketing">
+
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-tag">Nuestra propuesta</span>
+            <h2>Estrategia de Marketing</h2>
+            <div class="section-divider"></div>
+            <p style="max-width:700px; margin:20px auto 0 auto;">
+                Nos conectamos contigo de forma directa y personalizada para acompañarte en cada paso de tu rutina de cuidado capilar.
+            </p>
+        </div>
+
+        <div class="cards">
+            <div class="card">
+                <div class="card-content">
+                    <h3>1️⃣ Asesoría Personalizada</h3>
+                    <p>Equipo capacitado en cuidado capilar, disponible por WhatsApp, correo y redes sociales.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>2️⃣ Contenido de Valor</h3>
+                    <p>Blogs, tutoriales y consejos sobre cuidado del cabello y productos naturales.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>3️⃣ Fidelización</h3>
+                    <p>Programas de recompensas, descuentos especiales y promociones exclusivas para clientes fieles.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>4️⃣ Colaboraciones</h3>
+                    <p>Alianzas con influencers y salones de belleza para expandir el alcance de Nairobi Artesanal.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>5️⃣ Redes Sociales</h3>
+                    <p>Presencia activa en Instagram y Facebook, compartiendo testimonios y promociones.</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-content">
+                    <h3>6️⃣ Eventos y Ferias</h3>
+                    <p>Participación en ferias de belleza y eventos para dar a conocer la marca y captar clientes.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- TESTIMONIOS -->
+<section class="testimonios" id="testimonios">
+
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-tag">Opiniones</span>
+            <h2>Lo que dicen nuestras clientas</h2>
+            <div class="section-divider"></div>
+        </div>
+
+        <div class="testi-container">
+            <div class="testi">
+                <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                <p>"Mi cabello nunca había estado tan suave."</p>
+                <div class="testi-footer">
+                    <span class="testi-name">María R.</span>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+            <div class="testi">
+                <div class="testi-quote"><i class="fas fa-quote-left"></i></div>
+                <p>"El tratamiento es increíble."</p>
+                <div class="testi-footer">
+                    <span class="testi-name">Carla D.</span>
+                    <div class="stars">★★★★★</div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CONTACTO -->
+<section class="contacto" id="contacto">
+
+    <div class="container">
+
+        <div class="section-header">
+            <span class="section-tag">Hablemos</span>
+            <h2>Contáctanos</h2>
+            <div class="section-divider"></div>
+            <p style="max-width: 600px; margin: 20px auto 0; color: var(--texto-light);">
+                Queremos conocerte y ayudarte a encontrar el cuidado capilar que tu cabello necesita. Escríbenos y una asesora especializada te contactará a la brevedad.
+            </p>
+        </div>
+
+        <div class="contact-grid">
+
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fab fa-whatsapp"></i>
+                    <div>
+                        <h4>WhatsApp</h4>
+                        <p>(829) 969-3324</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-instagram"></i>
+                    <div>
+                        <h4>Instagram</h4>
+                        <p>@nairobiartesanal</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fab fa-facebook-f"></i>
+                    <div>
+                        <h4>Facebook</h4>
+                        <p>Nairobi Artesanal</p>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-location-dot"></i>
+                    <div>
+                        <h4>Ubicación</h4>
+                        <p>Santo Domingo, República Dominicana</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15141.51806112948!2d-69.912672!3d18.458903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f1107ea5e7%3A0x5d415a7aedc1a5e!2sSanto%20Domingo!5e0!3m2!1ses!2sdo!4v1700000000000!5m2!1ses!2sdo"
+                    allowfullscreen=""
+                    loading="lazy">
+                </iframe>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- FOOTER -->
+<footer>
+
+    <div class="container">
+
+        <div class="footer-content">
+
+            <div class="footer-brand">
+                <i class="fas fa-leaf"></i>
+                <span>Nairobi Artesanal SRL</span>
+                <p>Belleza natural para tu cabello 🌸</p>
+            </div>
+
+            <div class="footer-links">
+                <a href="#inicio">Inicio</a>
+                <a href="#productos">Productos</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#mision">Misión</a>
+                <a href="#kit">Kit</a>
+                <a href="#testimonios">Opiniones</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2025 Nairobi Artesanal SRL — Hecho con amor 🌸</p>
+            <p style="margin-top: 8px; font-size: 0.8rem; opacity: 0.8;">
+                RNC: 123456789 | Tel: (829) 969-3324 | Santo Domingo, República Dominicana
+            </p>
+        </div>
+
+    </div>
+
+</footer>
+
+<!-- TOAST NOTIFICATION -->
+<div class="toast-notification" id="toast">
+    <i class="fas fa-check-circle"></i>
+    <span id="toastMessage">Producto agregado</span>
+</div>
+
+<script>
+
+// MENU HAMBURGUESA
+const menuIcon = document.getElementById('menuIcon');
+const navLinks = document.querySelector('.nav-links');
+
+if (menuIcon && navLinks) {
+    menuIcon.addEventListener('click', () => {
+        navLinks.classList.toggle('active');
+    });
+}
+
+// =====================================================
+// CARRITO MEJORADO CON LOCALSTORAGE
+// =====================================================
+
+let cart = [];
+
+// Cargar carrito guardado
+const savedCart = localStorage.getItem('nairobi_cart');
+if (savedCart) {
+    try {
+        cart = JSON.parse(savedCart);
+    } catch(e) {
+        cart = [];
+    }
+}
+
+// Elementos del DOM
+const cartIcon = document.getElementById('cartIcon');
+const cartModal = document.getElementById('cartModal');
+const cartOverlay = document.getElementById('cartOverlay');
+const closeCartBtn = document.getElementById('closeCartBtn');
+const cartItemsContainer = document.getElementById('cartItems');
+const cartTotalSpan = document.getElementById('cartTotal');
+const cartCountSpan = document.getElementById('cartCount');
+const toast = document.getElementById('toast');
+const toastMessage = document.getElementById('toastMessage');
+
+// Modal de confirmación
+const confirmModal = document.createElement('div');
+confirmModal.className = 'confirm-modal';
+confirmModal.innerHTML = `
+    <i class="fas fa-check-circle"></i>
+    <h3>¡Pedido enviado! 🎉</h3>
+    <p>Tu pedido ha sido enviado correctamente.<br>En breve recibirás confirmación por WhatsApp.</p>
+    <button class="btn-close-confirm">Continuar</button>
+`;
+document.body.appendChild(confirmModal);
+const closeConfirmBtn = confirmModal.querySelector('.btn-close-confirm');
+
+// Función para mostrar toast
+function showToast(message, type = 'success') {
+    if (toast && toastMessage) {
+        toastMessage.textContent = message;
+        toast.className = `toast-notification toast-${type}`;
+        toast.classList.add('show');
+        setTimeout(() => {
+            toast.classList.remove('show');
+            toast.className = 'toast-notification';
+        }, 3000);
+    }
+}
+
+// Abrir/cerrar carrito
+if (cartIcon && cartModal && cartOverlay && closeCartBtn) {
+    cartIcon.addEventListener('click', () => {
+        cartModal.classList.add('open');
+        cartOverlay.classList.add('open');
+    });
+
+    function closeCart() {
+        cartModal.classList.remove('open');
+        cartOverlay.classList.remove('open');
+    }
+
+    closeCartBtn.addEventListener('click', closeCart);
+    cartOverlay.addEventListener('click', closeCart);
+}
+
+// Actualizar UI del carrito
+function updateCartUI() {
+    if (!cartItemsContainer || !cartTotalSpan || !cartCountSpan) return;
+
+    cartItemsContainer.innerHTML = '';
+    let total = 0;
+    let totalItems = 0;
+
+    if (cart.length === 0) {
+        cartItemsContainer.innerHTML = `
+            <div class="empty-cart">
+                <i class="fas fa-shopping-bag"></i>
+                🌸 Tu carrito está vacío
+                <p style="font-size: 0.8rem; margin-top: 10px;">Agrega productos para comenzar</p>
+            </div>
+        `;
+    } else {
+        cart.forEach((item, idx) => {
+            total += item.price * item.quantity;
+            totalItems += item.quantity;
+            cartItemsContainer.innerHTML += `
+                <div class="cart-item">
+                    <div class="cart-item-info">
+                        <h4>${escapeHtml(item.name)}</h4>
+                        <p>RD$${item.price} x ${item.quantity}</p>
+                        <small class="cart-item-subtotal">Subtotal: RD$${item.price * item.quantity}</small>
+                    </div>
+                    <div class="cart-item-actions">
+                        <button onclick="changeQuantity(${idx}, -1)">-</button>
+                        <span>${item.quantity}</span>
+                        <button onclick="changeQuantity(${idx}, 1)">+</button>
+                        <button onclick="removeItem(${idx})"><i class="fas fa-trash-alt"></i></button>
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+    cartTotalSpan.textContent = `RD$${total}`;
+    cartCountSpan.textContent = totalItems;
+    
+    // Guardar en localStorage
+    localStorage.setItem('nairobi_cart', JSON.stringify(cart));
+}
+
+// Escapar HTML para evitar inyección
+function escapeHtml(str) {
+    return str.replace(/[&<>]/g, function(m) {
+        if (m === '&') return '&amp;';
+        if (m === '<') return '&lt;';
+        if (m === '>') return '&gt;';
+        return m;
+    });
+}
+
+// Cambiar cantidad
+window.changeQuantity = (idx, delta) => {
+    if (cart[idx].quantity + delta > 0) {
+        cart[idx].quantity += delta;
+    } else {
+        cart.splice(idx, 1);
+    }
+    updateCartUI();
+};
+
+// Eliminar item
+window.removeItem = (idx) => {
+    const itemName = cart[idx].name;
+    cart.splice(idx, 1);
+    updateCartUI();
+    showToast(`❌ ${itemName} eliminado`, 'error');
+};
+
+// Agregar al carrito
+function addToCart(id, name, price) {
+    const existing = cart.find(item => item.id === id);
+    if (existing) {
+        existing.quantity++;
+        showToast(`📦 +1 ${name}`, 'success');
+    } else {
+        cart.push({ id, name, price, quantity: 1 });
+        showToast(`✨ ${name} agregado al carrito`, 'success');
+    }
+    updateCartUI();
+}
+
+// Eventos de botones "Agregar"
+document.querySelectorAll('.btn-add').forEach(btn => {
+    btn.addEventListener('click', () => {
+        const id = parseInt(btn.dataset.id);
+        const name = btn.dataset.name;
+        const price = parseInt(btn.dataset.price);
+        addToCart(id, name, price);
+        
+        // Animación del botón
+        const originalHTML = btn.innerHTML;
+        btn.innerHTML = '<i class="fas fa-check"></i> ¡Agregado!';
+        setTimeout(() => {
+            btn.innerHTML = originalHTML;
+        }, 1500);
+    });
+});
+
+// =====================================================
+// CHECKOUT MEJORADO CON VALIDACIONES
+// =====================================================
+
+const checkoutBtn = document.getElementById('checkoutBtn');
+if (checkoutBtn) {
+    checkoutBtn.addEventListener('click', () => {
+        // Validar carrito vacío
+        if (cart.length === 0) {
+            showToast('🌸 Tu carrito está vacío. Agrega productos primero', 'error');
+            return;
+        }
+        
+        // Obtener valores del formulario
+        const nombre = document.getElementById('clienteNombre')?.value.trim();
+        const whatsapp = document.getElementById('clienteWhatsapp')?.value.trim();
+        const direccion = document.getElementById('clienteDireccion')?.value.trim();
+        const metodo = document.getElementById('metodoPago')?.value;
+        const comentario = document.getElementById('comentarioPedido')?.value.trim();
+        
+        // Validaciones
+        const errors = [];
+        if (!nombre) errors.push('nombre completo');
+        if (!whatsapp) errors.push('número de WhatsApp');
+        if (!direccion) errors.push('dirección de entrega');
+        if (!metodo) errors.push('método de pago');
+        
+        if (errors.length > 0) {
+            showToast(`❌ Por favor completa: ${errors.join(', ')}`, 'error');
+            return;
+        }
+        
+        // Validar formato de WhatsApp
+        const whatsappClean = whatsapp.replace(/\D/g, '');
+        if (whatsappClean.length < 10) {
+            showToast('❌ Ingresa un número de WhatsApp válido (10 dígitos)', 'error');
+            return;
+        }
+        
+        // Construir mensaje de WhatsApp
+        let total = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+        
+        let message = '🌸 *PEDIDO NAIROBI ARTESANAL* 🌸%0A%0A';
+        message += `📝 *Cliente:* ${nombre}%0A`;
+        message += `📞 *WhatsApp:* ${whatsapp}%0A`;
+        message += `📍 *Dirección:* ${direccion}%0A`;
+        message += `💳 *Pago:* ${metodo}%0A%0A`;
+        message += `📦 *DETALLE DEL PEDIDO:*%0A`;
+        message += `━━━━━━━━━━━━━━━━━━━━━%0A`;
+        
+        cart.forEach(item => {
+            message += `✨ ${item.name}%0A`;
+            message += `   Cantidad: ${item.quantity} × RD$${item.price} = RD$${item.price * item.quantity}%0A%0A`;
+        });
+        
+        message += `━━━━━━━━━━━━━━━━━━━━━%0A`;
+        message += `💰 *TOTAL: RD$${total}*%0A%0A`;
+        
+        if (comentario) {
+            message += `📝 *Notas:*%0A${comentario}%0A%0A`;
+        }
+        
+        message += `🙏 *¡Gracias por tu compra!* 🌸%0A`;
+        message += `📍 *Nairobi Artesanal SRL* - Hecho con amor`;
+        
+        // Abrir WhatsApp
+        window.open(`https://wa.me/18299693324?text=${message}`, '_blank');
+        
+        // Limpiar carrito
+        cart = [];
+        updateCartUI();
+        closeCart();
+        
+        // Limpiar formulario
+        document.getElementById('clienteNombre').value = '';
+        document.getElementById('clienteWhatsapp').value = '';
+        document.getElementById('clienteDireccion').value = '';
+        document.getElementById('metodoPago').value = '';
+        document.getElementById('comentarioPedido').value = '';
+        
+        // Mostrar modal de confirmación
+        confirmModal.classList.add('open');
+    });
+}
+
+// Cerrar modal de confirmación
+if (closeConfirmBtn) {
+    closeConfirmBtn.addEventListener('click', () => {
+        confirmModal.classList.remove('open');
+    });
+}
+
+// Cerrar con ESC
+document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+        if (cartModal && cartModal.classList.contains('open')) closeCart();
+        if (confirmModal.classList.contains('open')) confirmModal.classList.remove('open');
+    }
+});
+
+// Actualizar UI al cargar
+updateCartUI();
+
+// Navbar scroll effect
+window.addEventListener('scroll', () => {
+    const navbar = document.querySelector('.navbar');
+    if (navbar) {
+        if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+        } else {
+            navbar.classList.remove('scrolled');
+        }
+    }
+});
+
+</script>
+
+</body>
+</html>
