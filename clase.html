@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+<meta name="description" content="Productos naturales y cosmética artesanal en República Dominicana. Cuidado facial, corporal y capilar hecho a mano.">
+<meta name="keywords" content="cosmética artesanal, productos naturales, cuidado capilar, Nairobi Artesanal, República Dominicana">
 
 <title>Nairobi Artesanal | Belleza Natural</title>
 
@@ -20,14 +22,19 @@
 
 <body>
 
+<!-- TOP DISCOUNT BAR -->
+<div class="top-discount-bar" id="topDiscountBar">
+    🔥 20% DE DESCUENTO EN PRODUCTOS SELECCIONADOS 🔥
+</div>
+
+<!-- READING PROGRESS BAR -->
+<div class="reading-progress-bar" id="readingProgressBar"></div>
+
 <!-- NAVBAR -->
 <nav class="navbar">
 
     <div class="logo">
-        <div class="logo-icon">
-            <i class="fas fa-leaf"></i>
-        </div>
-
+        <img loading="lazy" src="logo.png" alt="Nairobi Artesanal" class="logo-img">
         <div class="logo-text">
             <span class="logo-name">Nairobi Artesanal</span>
             <span class="logo-tag">Naturalmente hecho con amor</span>
@@ -160,7 +167,33 @@
 
 </section>
 
-<!-- SOBRE NOSOTROS - CORREGIDO CON 4 VALORES -->
+<!-- ============================================ -->
+<!-- CARRUSEL PREMIUM - DESTACADOS -->
+<!-- ============================================ -->
+<section class="carousel-section">
+    <div class="carousel-header">
+        <span class="carousel-badge"><i class="fas fa-star"></i> Destacados</span>
+        <h2>Más vendidos 🌟</h2>
+    </div>
+    <div class="carousel-wrapper">
+        <button class="carousel-btn carousel-prev" id="carouselPrev" aria-label="Anterior">
+            <i class="fas fa-chevron-left"></i>
+        </button>
+        <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack"></div>
+        </div>
+        <button class="carousel-btn carousel-next" id="carouselNext" aria-label="Siguiente">
+            <i class="fas fa-chevron-right"></i>
+        </button>
+    </div>
+    <div style="text-align:center; margin-top:2rem;">
+        <a href="catalogo.html" class="btn btn-primary" style="display:inline-flex;align-items:center;gap:8px;padding:12px 28px;border-radius:9999px;font-size:1rem;font-weight:600;text-decoration:none;">
+            <i class="fas fa-book-open"></i> Ver más productos
+        </a>
+    </div>
+</section>
+
+<!-- SOBRE NOSOTROS -->
 <section class="nosotros" id="nosotros">
 
     <div class="container">
@@ -264,194 +297,6 @@
         </div>
 
     </div>
-
-</section>
-
-<!-- PRODUCTOS -->
-<section class="productos" id="productos">
-
-    <div class="container">
-
-        <div class="section-header">
-            <span class="section-tag">Colección</span>
-            <h2>Nuestros productos</h2>
-            <div class="section-divider"></div>
-        </div>
-
-        <div class="cards">
-
-            <div class="card">
-                <div class="card-image">
-                    <img src="2.png" alt="Jabón">
-                </div>
-                <div class="card-content">
-                    <div class="card-icon"><i class="fas fa-pump-soap"></i></div>
-                    <h3>Jabón de limón y bicarbonato</h3>
-                    <p>Limpieza profunda sin sulfatos.</p>
-                    <div class="card-price">RD$350</div>
-                    <button class="btn-add" data-id="1" data-name="Jabón de limón y bicarbonato" data-price="350">
-                        <i class="fas fa-cart-plus"></i> Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image">
-                    <img src="capilar-kit.png" alt="">
-                </div>
-                <div class="card-content">
-                    <div class="card-icon"><i class="fas fa-droplet"></i></div>
-                    <h3>Línea Artesanal para el cabello</h3>
-                    <p>Artesanal para Cabello.</p>
-                    <div class="card-price">RD$4000</div>
-                    <button class="btn-add" data-id="2" data-name="Línea Artesanal para el cabello" data-price="4000">
-                        <i class="fas fa-cart-plus"></i> Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image">
-                    <img src="1.jpeg" alt="">
-                </div>
-                <div class="card-content">
-                    <div class="card-icon"><i class="fas fa-water"></i></div>
-                    <h3>Línea de rizos</h3>
-                    <p>Define y controla el frizz.</p>
-                    <div class="card-price">RD$4000</div>
-                    <button class="btn-add" data-id="3" data-name="Línea de rizos" data-price="4000">
-                        <i class="fas fa-cart-plus"></i> Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image">
-                    <img src="gotero.png" alt="">
-                </div>
-                <div class="card-content">
-                    <div class="card-icon"><i class="fas fa-eye-dropper"></i></div>
-                    <h3>Gotero Natural</h3>
-                    <p>Anti-caída & crecimiento.</p>
-                    <div class="card-price">RD$950</div>
-                    <button class="btn-add" data-id="4" data-name="Gotero Natural" data-price="950">
-                        <i class="fas fa-cart-plus"></i> Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image">
-                    <img src="otra vez.png" alt="">
-                </div>
-                <div class="card-content">
-                    <div class="card-icon"><i class="fas fa-fire"></i></div>
-                    <h3>Lumisebo</h3>
-                    <p>Tratamiento natural.</p>
-                    <div class="card-price">RD$2500</div>
-                    <button class="btn-add" data-id="5" data-name="Lumisebo" data-price="2500">
-                        <i class="fas fa-cart-plus"></i> Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-image">
-                    <img src="crema reductora.png" alt="">
-                </div>
-                <div class="card-content">
-                    <div class="card-icon"><i class="fas fa-spa"></i></div>
-                    <h3>Crema Reductora</h3>
-                    <p>Ayuda a reducir medidas.</p>
-                    <div class="card-price">RD$650</div>
-                    <button class="btn-add" data-id="6" data-name="Crema Reductora" data-price="650">
-                        <i class="fas fa-cart-plus"></i> Agregar al carrito
-                    </button>
-                </div>
-            </div>
-
-        </div>
-
-        <div style="text-align:center; margin-top:60px;">
-            <a href="catalogo.html" class="btn btn-primary">
-                <i class="fas fa-book-open"></i> Ver catálogo completo
-            </a>
-        </div>
-
-    </div>
-
-</section>
-
-<!-- KIT INTEGRAL -->
-<section class="kit" id="kit">
-
-    <div class="container">
-
-        <div class="section-header">
-            <span class="section-tag">Kit Completo</span>
-            <h2>Kit Integral de Cuidado Capilar</h2>
-            <div class="section-divider"></div>
-            <p style="max-width: 700px; margin: 20px auto 0; color: var(--texto-light);">
-                Un conjunto completo de 7 productos artesanales diseñados para transformar la salud y apariencia de tu cabello de manera natural y efectiva.
-            </p>
-        </div>
-
-        <div class="cards">
-            <div class="card">
-                <div class="card-content" style="text-align: center;">
-                    <div class="card-icon" style="margin: 0 auto 20px auto;">🧴</div>
-                    <h3>Shampoo Natural</h3>
-                    <p>Fórmula suave que limpia delicadamente el cabello sin dañarlo, con ingredientes naturales que nutren y fortalecen desde la raíz.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content" style="text-align: center;">
-                    <div class="card-icon" style="margin: 0 auto 20px auto;">💧</div>
-                    <h3>Acondicionador</h3>
-                    <p>Enriquecido con hidratantes naturales para un cabello sedoso, suave y manejable, con protección contra el daño ambiental.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content" style="text-align: center;">
-                    <div class="card-icon" style="margin: 0 auto 20px auto;">💫</div>
-                    <h3>Gel de Rizos</h3>
-                    <p>Con colágeno natural para definir y dar forma a tus rizos, mejorando su elasticidad y manteniéndolos saludables y brillantes.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content" style="text-align: center;">
-                    <div class="card-icon" style="margin: 0 auto 20px auto;">✨</div>
-                    <h3>Gotas para la Caída</h3>
-                    <p>Combinación de ingredientes naturales que fortalecen las raíces, reducen la caída y estimulan el crecimiento saludable del cabello.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content" style="text-align: center;">
-                    <div class="card-icon" style="margin: 0 auto 20px auto;">🌟</div>
-                    <h3>Jalea para Peinado</h3>
-                    <p>Fijación suave y flexible para cualquier peinado. Sin sensación pesada ni pegajosa, con acabado natural y duradero.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content" style="text-align: center;">
-                    <div class="card-icon" style="margin: 0 auto 20px auto;">🌿</div>
-                    <h3>Leave-In (Aceite)</h3>
-                    <p>Aceite ligero y nutritivo que protege del calor, mantiene la hidratación y aporta brillo durante todo el día.</p>
-                </div>
-            </div>
-            <div class="card">
-                <div class="card-content" style="text-align: center;">
-                    <div class="card-icon" style="margin: 0 auto 20px auto;">💆</div>
-                    <h3>Mascarilla Intensiva</h3>
-                    <p>Hidratación profunda semanal que repara el cabello dañado, mejora su salud y le devuelve vida, brillo y elasticidad.</p>
-                </div>
-            </div>
-        </div>
-
-    </div>
-
-</section>
-
 <!-- VENTAJAS COMPETITIVAS -->
 <section class="ventajas" id="ventajas">
 
@@ -616,53 +461,49 @@
     <div class="container">
 
         <div class="section-header">
-            <span class="section-tag">Hablemos</span>
+            <span class="section-tag">📞 Hablemos</span>
             <h2>Contáctanos</h2>
             <div class="section-divider"></div>
             <p style="max-width: 600px; margin: 20px auto 0; color: var(--texto-light);">
-                Queremos conocerte y ayudarte a encontrar el cuidado capilar que tu cabello necesita. Escríbenos y una asesora especializada te contactará a la brevedad.
+                Estamos disponibles para ayudarte con cualquier duda sobre nuestros productos.
             </p>
         </div>
 
         <div class="contact-grid">
 
             <div class="contact-info">
-                <div class="contact-item">
+                <a href="https://wa.me/18299693324" target="_blank" class="contact-card">
                     <i class="fab fa-whatsapp"></i>
                     <div>
                         <h4>WhatsApp</h4>
                         <p>(829) 969-3324</p>
                     </div>
-                </div>
-                <div class="contact-item">
+                </a>
+                <a href="https://instagram.com/nairobiartesanal" target="_blank" class="contact-card">
                     <i class="fab fa-instagram"></i>
                     <div>
                         <h4>Instagram</h4>
                         <p>@nairobiartesanal</p>
                     </div>
-                </div>
-                <div class="contact-item">
+                </a>
+                <a href="https://facebook.com/nairobiartesanal" target="_blank" class="contact-card">
                     <i class="fab fa-facebook-f"></i>
                     <div>
                         <h4>Facebook</h4>
                         <p>Nairobi Artesanal</p>
                     </div>
-                </div>
-                <div class="contact-item">
-                    <i class="fas fa-location-dot"></i>
-                    <div>
-                        <h4>Ubicación</h4>
-                        <p>Santo Domingo, República Dominicana</p>
-                    </div>
-                </div>
+                </a>
             </div>
 
             <div class="contact-map">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15141.51806112948!2d-69.912672!3d18.458903!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eaf89f1107ea5e7%3A0x5d415a7aedc1a5e!2sSanto%20Domingo!5e0!3m2!1ses!2sdo!4v1700000000000!5m2!1ses!2sdo"
-                    allowfullscreen=""
+                    src="https://www.openstreetmap.org/export/embed.html?bbox=-69.9227%2C18.4489%2C-69.9027%2C18.4689&layer=mapnik&marker=18.4589%2C-69.9127"
                     loading="lazy">
                 </iframe>
+                <div class="map-address">
+                    <i class="fas fa-map-marker-alt"></i> Nairobi Artesanal, F5G6+PC8, Santo Domingo Este
+                    &nbsp;|&nbsp; <a href="https://www.openstreetmap.org/?mlat=18.4589&mlon=-69.9127&zoom=16" target="_blank" style="color:var(--rosa-strong);text-decoration:none;">Ver más grande</a>
+                </div>
             </div>
 
         </div>
@@ -670,6 +511,40 @@
     </div>
 
 </section>
+
+<!-- PROMO POPUP -->
+<div class="popup-overlay" id="popupOverlay"></div>
+<div class="popup-modal" id="popupModal">
+    <button class="popup-close" id="popupCloseBtn">&times;</button>
+    <div class="popup-content">
+        <div class="popup-shine"></div>
+        <div class="popup-badge">🔥 OFERTA ESPECIAL</div>
+        <h2 class="popup-title">¡20% DE DESCUENTO!</h2>
+        <p class="popup-subtitle">En productos seleccionados</p>
+        <div class="popup-timer" id="popupTimer">
+            <span class="popup-timer-label">Oferta termina en:</span>
+            <div class="popup-timer-digits">
+                <span id="popupDays">00</span>:<span id="popupHours">00</span>:<span id="popupMins">00</span>:<span id="popupSecs">00</span>
+            </div>
+        </div>
+        <a href="https://wa.me/18299693324?text=Hola%21%20Quiero%20aprovechar%20el%2020%25%20de%20descuento" target="_blank" class="popup-btn" id="popupBtn">
+            <i class="fab fa-whatsapp"></i> Aprovechar oferta
+        </a>
+        <p class="popup-footer-text">* Válido por tiempo limitado. No acumulable.</p>
+    </div>
+    <div class="popup-particles" id="popupParticles"></div>
+</div>
+
+<!-- BACK TO TOP -->
+<button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+    <i class="fas fa-arrow-up"></i>
+</button>
+
+<!-- FLOATING WHATSAPP BUTTON -->
+<a href="https://wa.me/18299693324" target="_blank" class="float-wa" aria-label="WhatsApp">
+    <i class="fab fa-whatsapp"></i>
+    <span class="float-wa-tooltip">Escríbenos</span>
+</a>
 
 <!-- FOOTER -->
 <footer>
@@ -700,6 +575,9 @@
             <p>© 2025 Nairobi Artesanal SRL — Hecho con amor 🌸</p>
             <p style="margin-top: 8px; font-size: 0.8rem; opacity: 0.8;">
                 RNC: 123456789 | Tel: (829) 969-3324 | Santo Domingo, República Dominicana
+            </p>
+            <p style="margin-top: 6px; font-size: 0.85rem; font-weight: 500;">
+                <i class="fas fa-map-marker-alt"></i> Nairobi Artesanal, F5G6+PC8, Santo Domingo Este
             </p>
         </div>
 
@@ -1011,6 +889,225 @@ window.addEventListener('scroll', () => {
     }
 });
 
+// =====================================================
+// READING PROGRESS BAR
+// =====================================================
+const progressBar = document.getElementById('readingProgressBar');
+if (progressBar) {
+    window.addEventListener('scroll', () => {
+        const scrollTop = window.scrollY;
+        const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+        const progress = docHeight > 0 ? (scrollTop / docHeight) * 100 : 0;
+        progressBar.style.width = progress + '%';
+    });
+}
+
+// =====================================================
+// BACK TO TOP
+// =====================================================
+const backToTop = document.getElementById('backToTop');
+if (backToTop) {
+    window.addEventListener('scroll', () => {
+        backToTop.classList.toggle('show', window.scrollY > 500);
+    });
+    backToTop.addEventListener('click', () => {
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+}
+
+// =====================================================
+// SCROLL REVEAL
+// =====================================================
+const revealElements = document.querySelectorAll('.card, .testi, .section-header, .contact-grid > *');
+const revealObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            entry.target.classList.add('revealed');
+            revealObserver.unobserve(entry.target);
+        }
+    });
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+revealElements.forEach(el => {
+    el.classList.add('reveal');
+    revealObserver.observe(el);
+});
+
+// =====================================================
+// PROMO POPUP
+// =====================================================
+const popupOverlay = document.getElementById('popupOverlay');
+const popupModal = document.getElementById('popupModal');
+const popupCloseBtn = document.getElementById('popupCloseBtn');
+const popupBtn = document.getElementById('popupBtn');
+
+// Check if popup was already shown
+if (!sessionStorage.getItem('popupShown')) {
+    setTimeout(() => {
+        popupOverlay.classList.add('active');
+        popupModal.classList.add('active');
+        sessionStorage.setItem('popupShown', 'true');
+    }, 4000);
+}
+
+if (popupCloseBtn) {
+    popupCloseBtn.addEventListener('click', () => {
+        popupOverlay.classList.remove('active');
+        popupModal.classList.remove('active');
+    });
+}
+
+if (popupOverlay) {
+    popupOverlay.addEventListener('click', () => {
+        popupOverlay.classList.remove('active');
+        popupModal.classList.remove('active');
+    });
+}
+
+// Countdown timer (7 days from now)
+function startCountdown() {
+    const endDate = new Date();
+    endDate.setDate(endDate.getDate() + 7);
+    
+    function updateTimer() {
+        const now = new Date();
+        const diff = endDate - now;
+        if (diff <= 0) return;
+        
+        const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+        const hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const mins = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+        const secs = Math.floor((diff % (1000 * 60)) / 1000);
+        
+        document.getElementById('popupDays').textContent = String(days).padStart(2, '0');
+        document.getElementById('popupHours').textContent = String(hours).padStart(2, '0');
+        document.getElementById('popupMins').textContent = String(mins).padStart(2, '0');
+        document.getElementById('popupSecs').textContent = String(secs).padStart(2, '0');
+    }
+    
+    updateTimer();
+    setInterval(updateTimer, 1000);
+}
+startCountdown();
+
+// Popup floating particles
+const popupParticles = document.getElementById('popupParticles');
+if (popupParticles) {
+    const particles = ['✨', '🌿', '🍃', '🌸', '💫'];
+    for (let i = 0; i < 15; i++) {
+        const p = document.createElement('span');
+        p.className = 'popup-particle';
+        p.textContent = particles[i % particles.length];
+        p.style.left = Math.random() * 100 + '%';
+        p.style.animationDelay = Math.random() * 5 + 's';
+        p.style.fontSize = (12 + Math.random() * 10) + 'px';
+        popupParticles.appendChild(p);
+    }
+}
+
+// =====================================================
+// CARRUSEL PREMIUM
+// =====================================================
+const featuredProducts = [
+    { name: "Protector Solar", img: "protector.png", precio: 600 },
+    { name: "Crema Blanqueadora", img: "crema.png", precio: 900 },
+    { name: "Exfoliante Cúrcuma", img: "curcuma.png", precio: 800 },
+    { name: "Jabón Arroz y Romero", img: "arrzos.png", precio: 350 },
+    { name: "Aceite Natural Nairobi", img: "aceite.png", precio: 2500 },
+    { name: "Crema Reductora", img: "crema reductora.png", precio: 700 },
+    { name: "Gel de Aloe Vera", img: "gel.png", precio: 400 },
+    { name: "Kit Cirugía Capilar", img: "capilar-kit.png", precio: 1600 }
+];
+
+let carouselCurrent = 0;
+const track = document.getElementById('carouselTrack');
+
+function createCarouselCards() {
+    featuredProducts.forEach(p => {
+        const card = document.createElement('div');
+        card.className = 'carousel-card';
+        card.innerHTML = `
+            <div class="carousel-img-wrap">
+                <img src="${p.img}" alt="${p.name}" loading="lazy">
+            </div>
+            <div class="carousel-info">
+                <h3>${p.name}</h3>
+                <div class="carousel-stars">★★★★★</div>
+                <div class="carousel-price">RD$${p.precio}</div>
+                <a href="https://wa.me/18299693324?text=Hola%2C%20quiero%20${encodeURIComponent(p.name)}" target="_blank" class="carousel-wa">
+                    <i class="fab fa-whatsapp"></i> Comprar
+                </a>
+            </div>
+        `;
+        track.appendChild(card);
+    });
+}
+
+function renderCarousel() {
+    const cards = track.querySelectorAll('.carousel-card');
+    const n = featuredProducts.length;
+    const container = document.querySelector('.carousel-container');
+    const cw = container.offsetWidth;
+    const scale = Math.min(1, cw / 820);
+    cards.forEach(card => {
+        const i = parseInt(card.dataset.index);
+        let dist = (i - carouselCurrent + n) % n;
+        if (dist > n / 2) dist -= n;
+        const abs = Math.abs(dist);
+        let x, y, scl, op, z;
+        if (abs === 0) {
+            x = 0; y = 0; scl = 1; op = 1; z = 10;
+            card.classList.add('active');
+        } else if (abs === 1) {
+            x = (dist > 0 ? 180 : -180) * scale; y = 20 * scale; scl = 0.88; op = 0.6; z = 5;
+            card.classList.remove('active');
+        } else if (abs === 2) {
+            x = (dist > 0 ? 330 : -330) * scale; y = 60 * scale; scl = 0.75; op = 0.3; z = 1;
+            card.classList.remove('active');
+        } else {
+            x = (dist > 0 ? 450 : -450) * scale; y = 100 * scale; scl = 0.65; op = 0; z = 0;
+            card.classList.remove('active');
+        }
+        card.style.transform = `translateX(${x}px) translateY(${y}px) scale(${scl})`;
+        card.style.opacity = op;
+        card.style.zIndex = z;
+    });
+}
+
+function nextCarousel() {
+    carouselCurrent = (carouselCurrent + 1) % featuredProducts.length;
+    renderCarousel();
+}
+
+function prevCarousel() {
+    carouselCurrent = (carouselCurrent - 1 + featuredProducts.length) % featuredProducts.length;
+    renderCarousel();
+}
+
+createCarouselCards();
+track.querySelectorAll('.carousel-card').forEach((card, i) => card.dataset.index = i);
+renderCarousel();
+
+window.addEventListener('resize', renderCarousel);
+
+let autoRotate = setInterval(nextCarousel, 2000);
+
+track.addEventListener('mouseenter', () => clearInterval(autoRotate));
+track.addEventListener('mouseleave', () => {
+    clearInterval(autoRotate);
+    autoRotate = setInterval(nextCarousel, 2000);
+});
+
+document.getElementById('carouselPrev').addEventListener('click', () => {
+    clearInterval(autoRotate);
+    prevCarousel();
+    autoRotate = setInterval(nextCarousel, 2000);
+});
+
+document.getElementById('carouselNext').addEventListener('click', () => {
+    clearInterval(autoRotate);
+    nextCarousel();
+    autoRotate = setInterval(nextCarousel, 2000);
+});
 </script>
 
 </body>

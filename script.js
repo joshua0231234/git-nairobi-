@@ -1,21 +1,14 @@
+function esc(str) {
+  const m = { '&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#039;' };
+  return String(str).replace(/[&<>"']/g, c => m[c]);
+}
+
 fetch("productos.json")
-.then(response => response.json())
+.then(r => r.json())
 .then(productos => {
-
-    console.log(productos);
-
-    productos.forEach(producto => {
-
-        const div = document.createElement("div");
-
-        div.innerHTML = `
-            <h2>${producto.nombre}</h2>
-            <img src="${producto.imagen}" width="200">
-            <p>RD$ ${producto.precio}</p>
-        `;
-
-        document.body.appendChild(div);
-
-    });
-
+  productos.forEach(p => {
+    const div = document.createElement("div");
+    div.innerHTML = `<h2>${esc(p.nombre)}</h2><img src="${esc(p.imagen)}" width="200"><p>RD$ ${esc(p.precio)}</p>`;
+    document.body.appendChild(div);
+  });
 });
